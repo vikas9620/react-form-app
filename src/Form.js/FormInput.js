@@ -74,6 +74,7 @@ const errorHandler = () => {
             type="text"
             placeholder="college name"
             ref={CollegeName}
+            required
           ></input>
           <Button type="submit" className="btn">
             Add User
