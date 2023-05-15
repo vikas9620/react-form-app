@@ -1,15 +1,17 @@
 import React from "react";
 import Card from "../UI/Card";
-import './InputList.css'
+import "./InputList.css";
+import Wrapper from "../Helper/Wrapper";
+
 const InputList = (props) => {
   return (
-    <Card>
+    <Wrapper>
       {props.users.map((user) => (
-        <li key={user.id}>
+        <Card className="list" key={user.id}>
           {user.name}({user.age} years old)
-        </li>
+        </Card>
       ))}
-    </Card>
+    </Wrapper>
   );
 };
 export default InputList;

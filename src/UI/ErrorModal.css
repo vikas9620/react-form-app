@@ -1,56 +1,55 @@
 .error-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .error-modal-content {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .error-modal h2 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    color: black;
-  }
-  
-  .error-modal p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-    color: black;
-  }
-  
-  .error-modal-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .error-modal-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .error-modal-buttons button:first-child {
-    background-color: #ccc;
-  }
-  
-  .error-modal-buttons button:last-child {
-    background-color: #f44336;
-    color: white;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-modal-content {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-modal h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: black;
+}
+
+.error-modal p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: black;
+}
+
+.error-modal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.error-modal-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.error-modal-buttons button:first-child {
+  background-color: #ccc;
+}
+
+.error-modal-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}

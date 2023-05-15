@@ -2,8 +2,9 @@ import React from "react";
 import "./button.css";
 
 const Button = (props) => {
+  const buttonStyle = 'btn ' + props.className;
   return (
-    <button className="btn" type={props.type || 'button'} onClick={props.onClick}>
+    <button className={buttonStyle} type={props.type || 'button'} onClick={props.onClick}>
       {props.children}
     </button>
   );
