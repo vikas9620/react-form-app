@@ -8,7 +8,7 @@ const InputList = (props) => {
     <Wrapper>
       {props.users.map((user) => (
         <Card className="list" key={user.id}>
-          {user.name}({user.age} years old)
+          {user.name}({user.age} years old) {user.CollegeNameRef}
         </Card>
       ))}
     </Wrapper>

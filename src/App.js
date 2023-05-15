@@ -5,11 +5,11 @@ import React, { useState } from "react";
 
 function App() {
   const [newUser, setNewUser] = useState([]);
-  const addUser = (NewUserName, NewUserAge) => {
+  const addUser = (NewUserName, NewUserAge ,NewCollegeName) => {
     setNewUser((prevUser) => {
       return [
         ...prevUser,
-        { name: NewUserName, age: NewUserAge, id: Math.random().toString() },
+        { name: NewUserName, age: NewUserAge, CollegeNameRef: NewCollegeName, id: Math.random().toString() },
       ];
     });
   };

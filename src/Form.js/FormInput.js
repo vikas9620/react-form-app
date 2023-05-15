@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "../UI/Card";
 import classes from "./FormInput.css";
 import Button from "../UI/button";
@@ -6,6 +6,7 @@ import "./FormInput.css";
 import ErrorModal from "../UI/ErrorModal";
 import Wrapper from "../Helper/Wrapper";
 const FormInput = (props) => {
+  const CollegeName = useRef();
   const [userName, setUserName] = useState("");
   const [userAge, setUserAge] = useState("");
   const [error, setError] = useState("");
@@ -34,10 +35,11 @@ const FormInput = (props) => {
       });
       return;
     }
-
-    props.onAddUser(userName, userAge);
+const CollegeNameRef=CollegeName.current.value;
+    props.onAddUser(userName, userAge, CollegeNameRef);
     setUserName("");
     setUserAge("");
+    CollegeName.current.value='';
   };
 const errorHandler = () => { 
   setError(null)}
@@ -65,6 +67,13 @@ const errorHandler = () => {
             placeholder="your age"
             onChange={ageChangeHandler}
             value={userAge}
+          ></input>
+          <label>College Name</label>
+          <input
+            id="collegeName"
+            type="text"
+            placeholder="college name"
+            ref={CollegeName}
           ></input>
           <Button type="submit" className="btn">
             Add User
